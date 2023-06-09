@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tableView.dataSource = self
     }
     
     var tasks: [String] = []
@@ -44,6 +46,16 @@ class ViewController: UIViewController {
         alertController.addAction(addAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
+        cell.textLabel?.text = tasks[indexPath.row]
+        return cell
     }
     
 }
