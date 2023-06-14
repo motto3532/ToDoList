@@ -18,8 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f2I-Pj-lpg">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" id="kcT-2Y-SQU">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -33,11 +32,12 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f2I-Pj-lpg" secondAttribute="trailing" id="8J6-La-lj9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f2I-Pj-lpg" secondAttribute="bottom" id="DL4-Pr-UtA"/>
-                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vj8-ay-HJa"/>
-                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zWM-cw-2gt"/>
+                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4ma-wj-iDw"/>
+                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aaw-5y-f1A"/>
+                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nfc-oZ-RQj"/>
+                            <constraint firstItem="f2I-Pj-lpg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xM1-Vg-165"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ToDoList" id="C1D-NI-w2P">
@@ -81,9 +81,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

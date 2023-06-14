@@ -55,6 +55,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
         cell.textLabel?.text = tasks[indexPath.row]
+        cell.textLabel?.textColor = UIColor.black
+        cell.backgroundColor = UIColor.white
         return cell
     }
     
